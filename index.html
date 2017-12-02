@@ -10,73 +10,80 @@
     </head>
     <body>
 
-    <section id="navbar">
-        <nav class="navbar navbar-toggleable-md navbar-dark  bg-inverse">
-            <div class="page-header bg-inverse">
-                <h1 class="h1 bg-inverse" style="color:white;">Ryan Nesbitt&nbsp;&nbsp;&nbsp;&nbsp;</h1>
-            </div>
-            <div>
-                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                    <li class="nav-item active">
-                        <a class="nav-link" style="color: white;" href="index.html">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <div class="dropdown">
-                            <a class="nav-link dropdown-toggle" type="text" id="dropdownMenu2" data-toggle="dropdown"
-                                aria-haspopup="true" aria-expanded="false" style="color: white;">
-                                Experience
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                                <a class="dropdown-item" href="laborie.html">Laborie Medical Technologies</a>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" style="color: white;" href="about.html">About Me</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </section>
-    <div>
-        <div>
-            <br>
-            <h1 style="margin-left: 15%;margin-right: 15%"><center><img src="resources/logo.bmp" height="150"/></center>Abstract</h1><br>
-            <div>
-                <p style="margin-left: 15%;margin-right: 15%;">I am a third year student at the University of Guelph, attempting to get my Bachelor of
-                    Computing. My major is in Software Engineering, and I expect to graduate in 2020. This site is a roadmap of my experiences
-                    throughout my different co-op jobs, as well as personal projects, and hopefully looks good doing it.</p>
-            </div>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-toggleable-md navbar-dark  bg-inverse">
+        <div class="page-header bg-inverse">
+            <h1 class="h1 bg-inverse" style="color:white;">Ryan Nesbitt&nbsp;&nbsp;&nbsp;&nbsp;</h1>
         </div>
-    </div>
-        <section id="Jumbotron">
-            <div style="padding-top: 50px; margin-left:20%; margin-right:20%;">
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner" role="listbox">
-                    <div class="carousel-item active">
-                        <div class="panel panel-default well">
-                            <div class="panel-heading">
-                                <h3 class="panel-title">Laborie Medical Technologies (May - August 2017)</h3>
-                            </div>
-                            <div class="panel-body">
-                                My first coop position, and real experience in the field. I was a Software Developer at
-                                the company working on new projects. <a href="laborie.html">Click here</a> for more info.
-                            </div>
+        <div>
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" style="color: white;" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <div class="dropdown">
+                        <a class="nav-link dropdown-toggle" type="text" id="dropdownMenu2" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false" style="color: white;">
+                            Experience
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                            <a class="dropdown-item" href="laborie.html">Laborie Medical Technologies</a>
                         </div>
                     </div>
-                    <div class="carousel-item">
-                        <div class="panel panel-default well">
-                            <div class="panel-heading">
-                                <h3 class="panel-title">Trans Plus Systems Corp. (September - December 2017)</h3>
-                            </div>
-                            <div class="panel-body">
-                                My second coop position, a little closer to home. I wore the same hat as a Software Developer, continuing
-                                to develop my C#/XAML skills. More Info Coming Soon...
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="color: white;" href="about.html">About Me</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- This is the absract/guelph image -->
+    <div style="background-image: url(resources/guelphsign.jpg); height: 725px; background-attachment: fixed;
+        background-position: center; background-repeat: no-repeat; background-size: cover;">
+        <center>
+            <div style="padding-top: 100px;">
+                <div style="padding:10px; margin-left: 15%; margin-right: 15%; background:white; border-radius: 15px;">
+                <h1 style="margin-left: 15%;margin-right: 15%">Abstract</h1>
+                <p>I am a third year student at the University of Guelph, attempting to get my Bachelor of
+                    Computing. My major is in Software Engineering, and I expect to graduate in 2020. This site is a roadmap of my experiences
+                    throughout my different co-op jobs, as well as personal projects, and hopefully looks good doing it.</p>
+                </div>
+            </div>
+        </center>
+    </div>
+
+    <!-- Jumbotron -->
+    <section id="Jumbotron">
+        <div style="padding-top: 50px; margin-left:20%; margin-right:20%; border-radius: 15px;">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active">
+                    <div class="panel panel-default well">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Laborie Medical Technologies</h3>
+                            <h6>May 2017 - August 2017</h4>
+                        </div>
+                        <br>
+                        <div class="panel-body">
+                            My first coop position, and real experience in the field. I was a Software Developer at
+                            the company working on new projects. <a href="laborie.html">Click here</a> for more info.
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="panel panel-default well">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Trans Plus Systems Corp. (September - December 2017)</h3>
+                        </div>
+                        <div class="panel-body">
+                            My second coop position, a little closer to home. I wore the same hat as a Software Developer, continuing
+                            to develop my C#/XAML skills. More Info Coming Soon...
                             </div>
                         </div>
                     </div>
@@ -104,6 +111,7 @@
         </div>
         </section>
 
+        <!-- Scripts -->
         <section id="scripts">
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
             <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>

@@ -6,6 +6,12 @@
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <title>Laborie Medical | Ryan Nesbitt</title>
         <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+        <style>
+            #map {
+                height: 400px;
+                width: 100%;
+            }
+        </style>
     </head>
     <body>
         <section id="navbar">
@@ -36,7 +42,24 @@
                 </div>
             </nav>
         </section>
-
+        <div id="map" class="parallax">
+            <script>
+              function initMap() {
+                var laborie = {lat: 43.703, lng: -79.621};
+                var map = new google.maps.Map(document.getElementById('map'), {
+                  zoom: 10,
+                  center: laborie
+                });
+                var marker = new google.maps.Marker({
+                  position: laborie,
+                  map: map
+                });
+              }
+            </script>
+            <script async defer
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA0WFd4Ba7-9mJKxaPmKUwJ8hNd6aZThnI&callback=initMap">
+            </script>
+        </div>
         <section id="Job">
             <div class="container">
                 <div class="well">
