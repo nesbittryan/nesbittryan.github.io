@@ -4,44 +4,17 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>ryan.nesbittr</title>
+        <title>Home | Ryan Nesbitt</title>
         <link rel="icon" href="resources/logo.bmp">
         <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-        <link rel="stylesheet" type="text/css" href="css/custom.css">
     </head>
-
     <body>
-        <!-- SIDE BAR -->
-        <div id="sidebar">
-            <div id="headerdiv">
-                <h1 id="leftbracket">{</h1>
-                <h1 id="rightbracket">}</h1>
-                <h1 id="fname">ryan</h1>
-                <h1 id="lname">nesbitt</h1>
 
-            </div>
-            <hr id="thickline">
-                <!--<h1 style="font-family:courier">ryan<br>nesbitt</h1>-->
-            <a id="abstractlink" href="#home">abstract</a>
-            <a id="currentlink" href="#current">latest project</a>
-            <a id="previouslink" href="#experience">experience</a>
-            <a id="contactlink" href="#contact">contact me</a>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-toggleable-md navbar-dark  bg-inverse">
+        <div class="page-header bg-inverse">
+            <h1 class="h1 bg-inverse" style="color:white;">Ryan Nesbitt&nbsp;&nbsp;&nbsp;&nbsp;</h1>
         </div>
-<<<<<<< Updated upstream
-
-
-    <div id="rightview">
-        <!-- HOME -->
-        <div id="home">
-            <center>
-                <div style="padding-top: 50px;">
-                    <div style="padding:10px; margin-left: 5%; margin-right: 5%; background:white; border-radius: 15px;">
-                    <h1 style="margin-left: 15%;margin-right: 15%">abstract</h1>
-                    <p>I am a third year student at the University of Guelph, attempting to get my Bachelor of
-                        Computing. My major is in Software Engineering, and I expect to graduate in 2020. This site is a roadmap of my experiences
-                        throughout my different co-op jobs, as well as personal projects, and hopefully looks good doing it.
-                    <br></p>
-=======
         <div>
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                 <li class="nav-item active">
@@ -57,175 +30,27 @@
                             <a class="dropdown-item" href="transplus.html">Trans Plus Software</a>
                             <a class="dropdown-item" href="laborie.html">Laborie Medical Technologies</a>
                         </div>
->>>>>>> Stashed changes
                     </div>
-                </div>
-            </center>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="color: white;" href="about.html">About Me</a>
+                </li>
+            </ul>
         </div>
-        <br>
+    </nav>
 
-        <center><h1>Where I've Been</h1></center>
-        <div id="map">
-            <script>
-              function initMap() {
-                var transplus = {lat: 43.490984, lng: -80.209195};
-                var laborie = {lat: 43.703, lng: -79.621};
-                var map = new google.maps.Map(document.getElementById('map'), {
-                  zoom: 8,
-                  center: transplus
-                });
-                var laborieMarker = new google.maps.Marker({
-                  position: laborie,
-                  map: map,
-                  label: "Laborie"
-                });
-
-                var transplusMarker = new google.maps.Marker({
-                  position: transplus,
-                  map: map,
-                  label: "Trans Plus"
-                });
-              }
-            </script>
-            <script async defer
-                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA0WFd4Ba7-9mJKxaPmKUwJ8hNd6aZThnI&callback=initMap">
-            </script>
-        </div>
-        <br><br>
-
-        <!-- Current Position -->
-
-        <div id="current">
-            <h2><a style="color:black;" href="http://www.transpluscorp.com/">Trans Plus Systems</a></h2>
-            <h3>Software Developer (.NET)</h3>
-            <div class="container">
-                <h4>Who Are They?</h4><hr>
-                <p style="text-align:left;">
-
-                </p>
-                <br>
-                <h4>What Did I Do?</h4><hr>
-                <p style="text-align:left;">
-
-                </p>
-                <br>
-                <h4>What Did I learn?</h4><hr>
-                <p style="text-align:left;">
-
-                </p>
-                <br>
-                <p style="text-align:left;">
-
-                </p>
-                <br>
-                <h4>My Goals...</h4><hr>
-                <p>This term, I had three clear goals set out. I didn't accomplish all I wanted, but still made good progress.</p>
-                    <ol>
-                        <li class="list-group-item"><p>
-
-                        </p></li>
-                        <li class="list-group-item"><p>
-
-                        </p></li>
-                        <li class="list-group-item"><p>
-
-                        </p></li>
-                    </ol>
-                <br><h4>Conclusion</h4><hr>
-                <p style="text-align:left;">
-
-                </p>
-                <br>
-            </div>
-<<<<<<< Updated upstream
-        </div>
-        <br><br>
-
-        <!-- Previous experience -->
-        <div id="experience">
-            <!-- LABORIE -->
-            <div>
-                <h2><a style="color:black;" href="http://www.laborie.com/">Laborie Medical Technologies</a></h2>
-                <h3>Software Developer (.NET)</h3>
-                <div class="container">
-                    <h4>Who Are They?</h4><hr>
-                    <p style="text-align:left;">Laborie is a leading company in the Urodynamics industry. Working for a company that deals with mostly urinary
-                        products, this can lead to many interesting conversations. They are a global company, with a software team in Mississauga, Ontario, and Enschede,
-                        Netherlands. Besides these two software teams, Laborie also develops, creates, and produces all of its own products. They even sell consumables
-                        and disposables used during urodynamic procedures. Despite being a huge company, the company atmosphere prevents you from getting lost in a sea
-                        of people. The people I worked with were excellent people, whether I was skyping them over the ocean, or defeating them on the ping pong table.
-                    </p>
-                    <br>
-                    <h4>What Did I Do?</h4><hr>
-                    <p style="text-align:left;">My official job title was an Associate Software Developer, and this acurately describes what I got to do. I was
-                        lucky to get plenty of hands on experience developing code. I was doing the same job as the other Software Developers on the team, completing User
-                        Stories (in an agile developing environment), fixing bugs, writing unit tests for my code, gathering and refining requirements and continually learning
-                        new skills. My favourite part was jumping into a new programming environement, with no experience in the OS (developing on Windows, I use a Mac), no
-                        experience in the IDE (Visual Studios), no experience in the languages used (C# with XAML), and no experience in this Scrum developing methodology.
-                        The fact I was able to jump in, learn what to do, and complete my assigned tasks (and much more), really helped me improve my confidence in my code.
-                    </p>
-                    <br>
-                    <h4>What Did I learn?</h4><hr>
-                    <p style="text-align:left;">This opportunity increased my technical abilities immensely, but my soft skills improved much more. I came in as a
-                        nervous, quiet student, who was always scared his code was going to fail the test. I remember completing my first bug and how scared I was to even ask
-                        someone to look at my solution! I don't think I said a word for the first two weeks of the daily stand-up meetings! By the time my work term was done,
-                        I was completing on average of 2 stories per sprint, I resolved half of the teams total closed bugs, I was awarded (the coveted) Caped Coder award for
-                        3 out of the 5 sprints (most of any co-op student) I participated in (Caped Coder is a "Sprint MVP", voted on by the software team. The reward is a
-                        superhero cape for your office chair). I was the most vocal person in the Stand-ups (to the dismay of others),
-                        and tried to help others complete their stories when I had any free time. This term has solidified in my mind that I have chosen the right career path to
-                        pursue
-                    </p>
-                    <br>
-                    <p style="text-align:left;">I also learned about new technologies and got experience to strengthen my current knowledge. Specifically, I dealt with
-                        C# and XAML WPF applications for windows, and am very comfortable creating applications using these now. I also got to expand upon my current SQL knowledge,
-                        helping me expand my full-stack developing experience. I also used the Model-View-ViewModel method of architecture, a method that keeps the UI and the business
-                        loosely coupled, to allow for easy swapping, testing, and refactoring of code. I also found out about many new online resources, the biggest one being PluralSight.
-                        This website offers videos and MANY topics, and was instrumental in helping me learn the new frameworks and languages I needed.
-                    </p>
-                    <br>
-                    <h4>My Goals...</h4><hr>
-                    <p>I started this co-op term with four goals, and I have accomplished all of them.</p>
-                        <ol>
-                            <li class="list-group-item"><p>
-                                My first goal was to improve my personal and time
-                                management/organization. In the past I have struggled with keeping my projects and tasks organized, and I accomplished them at Laborie by keeping a journal which I would
-                                use to not only take notes, but to list my daily activities. This helped me get everything I needed to do prioritized and prevented me from forgetting any tasks.
-                            </p></li>
-                            <li class="list-group-item"><p>
-                                Another goal I had was to improve my overall development ability by learning to develop a new technology on a new system. I did this by learning to develop for a new platform (Windows, coming
-                                from a Mac background) and WPF Applications in C#. This goal was important to me because showing I can learn a new technology quickly, and develop on any system will be a great
-                                asset to any future employers.
-                            </p></li>
-                            <li class="list-group-item"><p>
-                                My third goal was to make connections with my co-workers to expand my network, and also my knowledge by learning from their experiences in the field.
-                                In my time, I have added many of my co-workers on LinkedIn, got offered to have letters of recommendation from multiple people, and was offered a job in the future if I was looking again.
-
-                            </p></li>
-                            <li class="list-group-item"><p>
-                                My final goal was to increase the readability of my code by other people. Looking back at my old projects, a lot of my code wasn't heavily documented. I changed this with this position,
-                                as I knew once I was gone people might need to look and update some of my code. I left it with comments, and this was with the help of StyleCop, a plugin that tells you when your
-                                style has problems, which includes comments for things like files, methods, and classes. Overall I am very happy with all of my goals, and am happily surprised that I did so well.
-                            </p></li>
-                        </ol>
-                    <br><h4>Conclusion</h4><hr>
-                    <p style="text-align:left;">In conclusion, I wish this term didn't have to end. I would of loved to work here for another term, but the travel time/cost
-                        was too much for me (Guelph -> Mississauga). I met plenty of great people, that were very helpful and taught me things covering a variety of subject areas.
-                        Laborie gave me an excellent environment where I felt safe to express myself, and I felt like my opinion was valued. Hopefully my path will cross with them again
-                        in the future! I'd like to end this post by recommending their products, as they're an excellent company, but I hope that my readers aren't in a position where they need them.
-                    </p>
-                    <br>
+    <!-- This is the absract/guelph image -->
+    <div style="background-image: url(resources/guelphsign.jpg); height: 725px; background-attachment: fixed;
+        background-position: center; background-repeat: no-repeat; background-size: cover;">
+        <center>
+            <div style="padding-top: 100px;">
+                <div style="padding:10px; margin-left: 15%; margin-right: 15%; background:white; border-radius: 15px;">
+                <h1 style="margin-left: 15%;margin-right: 15%">Abstract</h1>
+                <p>I am a third year student at the University of Guelph, attempting to get my Bachelor of
+                    Computing. My major is in Software Engineering, and I expect to graduate in 2020. This site is a roadmap of my experiences
+                    throughout my different co-op jobs, as well as personal projects, and hopefully looks good doing it.</p>
                 </div>
             </div>
-            <br><br>
-        </div>
-
-        <!-- Contact / About me -->
-        <div id="contact">
-            <h2 style="font-weight:bold;">Contact Me:</h2><hr>
-            <p style="text-align:left;">Email: nesbittr@uoguelph.ca
-                <a style="text-align:center; padding-left:20%;color:black;" href="https://github.com/nesbittryan">
-                    <img src="resources/github-box.png" style="filter: invert(100%);" height="30"/> GitHub
-=======
         </center>
     </div>
 
@@ -284,50 +109,21 @@
                 <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="sr-only">Previous</span>
->>>>>>> Stashed changes
                 </a>
-                <a style="text-align:center; padding-left:20%;color:black;" href="https://www.linkedin.com/in/ryan-nesbitt-94875713a/">
-                    <img src="resources/linkedin-box.png" style="filter: invert(100%);" height="30"/> LinkedIn
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
                 </a>
-            </p>
-            <br><h2 class="hmt">Education:</h2><hr>
-            <p class="hmt">Graduated F.E Madill High School as an Ontario Scholar, and am currently attending
-                the University of Guelph. I am getting my Bachelor of Computing, Major. Software Engineering (Co-Op).
-                I am also getting a minor in Psychology as it is an area of interest for me.
-                My best courses have been Object Oriented Programming (CIS*2430), Digital Systems I (CIS*3120) and
-                Software Systems Development and Integration (CIS*2750). I am experienced in the following languages (but not limited to):
-                <div>
-                    <ol class="list-group">
-                        <li class="list-group-item">1. C#/XAML</li>
-                        <li class="list-group-item">2. C</li>
-                        <li class="list-group-item">3. Python</li>
-                        <li class="list-group-item">4. HTML/PHP</li>
-                        <li class="list-group-item">5. Java</li>
-                        <li class="list-group-item">6. Perl/C++</li>
-                    </ol>
-                </div>
-            </p>
-            <br><h2 class="hmt">Interests:</h2><hr>
-            <p class="hmt">This section is dedicated to interests relating to my studies, other subjects will be in the next section.
-                I have a strong interest in understanding artificial intelligence, and have taken classes in Behavioural Neuroscience to
-                further increase my knowledge. Another interest I have recently uncovered is creating hardware circuits, as I have done in
-                Digital Systems. I enjoy playing around with technologies like Angular, Bootstrap, Regex, SQL, etc.</p>
-            <br><h2 class="hmt">Hobbies:</h2><hr>
-            <p class="hmt">I grew up playing a multitude of sports, many of which I still try to play and watch. These include a lot of hockey,
-                soccer, lacrosse and baseball/slowpitch. Keeping active is an important part of my life. I hit the gym every day, and believe proper
-                nutrition and excercise is necessary to maintain a healthy life. Most of my free time is divided evenly between cooking, working out,
-                playing with new languages/technologies, and playing video games. I play video games on both the Xbox One and PC.
-                Favourite Games include Fallout series, Elder Scrolls series, Overwatch, Call of Duty series, and so many more great games I'm
-                forgetting.
-            </p>
-            <br>
+            </div>
         </div>
+        </section>
 
         <!-- Scripts -->
         <section id="scripts">
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
             <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
             <script src="https://npmcdn.com/bootstrap@4.0.0-alpha.5/dist/js/bootstrap.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
         </section>
     </body>
 </html>
