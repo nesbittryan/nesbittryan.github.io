@@ -27,7 +27,7 @@
     transition: all 0.2s;
 }   
 .header-btn:hover {
-    color: #000;
+    color: #292b2c;
     background: #FFF;
 }
 @media all and (max-width:30em){
@@ -49,4 +49,47 @@
     48% {top:-0.4em}
     50% {top:0em}
     100%{top:0em}
+}
+
+#topBtn {
+    padding: 0.35em 2em;
+    border: 0.1em solid #FFFFFF;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 0.12em;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-align: center;
+    display: none; 
+    position: fixed; 
+    bottom: 10px; /* Place the button at the bottom of the page */
+    right: 10px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border-color: #292b2c;
+    background-color: white; /* Set a background color */
+    color: #292b2c; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+}
+
+#topBtn:hover {
+    background-color: #292b2c; /* Add a dark-grey background on hover */
+    color: white;
+    border-color: white;
+}
+
+.section {
+    padding: 8%;
+    padding-left: 12%;
+    padding-right: 12%;
+}
+
+.section-header {
+    
+}
+
+.down {
+}
+
+.icons {
+    height: 40px;
+    width: 40px;
 }
