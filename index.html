@@ -8,6 +8,7 @@
         <link rel="icon" href="resources/logo-border.bmp">
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="css/collapse.css">
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script>
@@ -33,7 +34,22 @@
         </script>
     </head>
     <body>
+    <script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
 
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.maxHeight){
+                content.style.maxHeight = null;
+            } else {
+                content.style.maxHeight = content.scrollHeight + "px";
+            } 
+        });
+    }
+    </script>
     <!-- Navigation Bar -->
     <nav class="navbar navbar-toggleable-md navbar-dark  bg-inverse">
         <div class="page-header bg-inverse">
@@ -57,17 +73,29 @@
 
         <div id="jobs" class="section" style="background-color: #292b2c; color: white;">
             <h1 class="section-header">Job History</h1>
-             <div id="ncr">
-                <h4>NCR</h4>
+            <button class="collapsible">Laborie Medical Technologies</button>
+            <div id="laborie" class="content">
+                <p align="left">My co-op adventure started at Laborie, and I was very lucky to get accepted as a Software Developer at this amazing company. The only negative about my time here was having to spend hours driving between the Mississauga office, and my house in Guelph. Here I greatly increased my confidence, as well as sharpened my ping pong skills.
+                <br></p>
+                <p align="right">Here I was introduced to programming in C#, a language I would fall in love with. I was using C# and XAML to create a windows application using the WPF subsystem of the .NET framework. I also got my first experience with SQL, which was one of my goals for this term. I learned a lot on this term, and I had a lot of fun with the corporate culture Laborie had to offer.</p>
             </div>
-            <div id="transplus">
-                <h4>Trans Plus Systems Corp</h4>
+            <button class="collapsible">Trans Plus Systems Corp.</button>
+            <div id="transplus" class="content">
+                <p align="left">My co-op adventure started at Laborie, and I was very lucky to get accepted as a Software Developer at this amazing company. The only negative about my time here was having to spend hours driving between the Mississauga office, and my house in Guelph. Here I greatly increased my confidence, as well as sharpened my ping pong skills.
+                <br></p>
+                <p align="right">Here I was introduced to programming in C#, a language I would fall in love with. I was using C# and XAML to create a windows application using the WPF subsystem of the .NET framework. I also got my first experience with SQL, which was one of my goals for this term. I learned a lot on this term, and I had a lot of fun with the corporate culture Laborie had to offer.</p>
             </div>
-            <div id="laborie">
-                <h4>Laborie Medical Technologies</h4>
+            <button class="collapsible">Wescast Industries</button>
+            <div id="wescast" class="content">
+                <p align="left">My co-op adventure started at Laborie, and I was very lucky to get accepted as a Software Developer at this amazing company. The only negative about my time here was having to spend hours driving between the Mississauga office, and my house in Guelph. Here I greatly increased my confidence, as well as sharpened my ping pong skills.
+                <br></p>
+                <p align="right">Here I was introduced to programming in C#, a language I would fall in love with. I was using C# and XAML to create a windows application using the WPF subsystem of the .NET framework. I also got my first experience with SQL, which was one of my goals for this term. I learned a lot on this term, and I had a lot of fun with the corporate culture Laborie had to offer.</p>
             </div>
-            <div id="wescast">
-                <h4>Wescast Industries</h4>
+            <button class="collapsible">NCR Corporation</button>
+            <div id="ncr" class="content">
+                <p align="left">My co-op adventure started at Laborie, and I was very lucky to get accepted as a Software Developer at this amazing company. The only negative about my time here was having to spend hours driving between the Mississauga office, and my house in Guelph. Here I greatly increased my confidence, as well as sharpened my ping pong skills.
+                <br></p>
+                <p align="right">Here I was introduced to programming in C#, a language I would fall in love with. I was using C# and XAML to create a windows application using the WPF subsystem of the .NET framework. I also got my first experience with SQL, which was one of my goals for this term. I learned a lot on this term, and I had a lot of fun with the corporate culture Laborie had to offer.</p>
             </div>
             <a href="#projects" style="color: white;"><span class="fa fa-chevron-down down"></span></a>
         </div>
