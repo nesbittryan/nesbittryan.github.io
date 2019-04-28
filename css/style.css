@@ -89,7 +89,11 @@
 .down {
 }
 
-.icons {
-    height: 40px;
-    width: 40px;
+.icon {
+    margin: 15px;
+    color:white;
+}
+
+.icon:hover {
+    color: #AAAAAA;
 }
