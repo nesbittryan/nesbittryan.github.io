@@ -34,22 +34,6 @@
         </script>
     </head>
     <body>
-    <script>
-    var coll = document.getElementsByClassName("collapsible");
-    var i;
-
-    for (i = 0; i < coll.length; i++) {
-        coll[i].addEventListener("click", function() {
-            this.classList.toggle("active");
-            var content = this.nextElementSibling;
-            if (content.style.maxHeight){
-                content.style.maxHeight = null;
-            } else {
-                content.style.maxHeight = content.scrollHeight + "px";
-            } 
-        });
-    }
-    </script>
     <!-- Navigation Bar -->
     <nav class="navbar navbar-toggleable-md navbar-dark  bg-inverse">
         <div class="page-header bg-inverse">
@@ -62,7 +46,7 @@
             <input class="header-btn bouncy" type="button" onClick="view('links')" style="animation-delay:0.21s" value="Links"/>
         </div>
     </nav>
-   <center>
+    <center>
         <div id="overview" class="section" style="background-color: white; color: #292b2c;">
             <h1 class="section-header">Overview</h1>
             <p style="text-align: left">This is the personal website of myself, Ryan Nesbitt. You'll find projects I'm working on, the places I have worked,
@@ -133,5 +117,21 @@
        
         <button onclick="topFunction()" id="topBtn" title="Top">&uarr;</button>
     </center>
+    <script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.maxHeight){
+                content.style.maxHeight = null;
+            } else {
+                content.style.maxHeight = content.scrollHeight + "px";
+            } 
+        });
+    }
+    </script>
     </body>
 </html>
