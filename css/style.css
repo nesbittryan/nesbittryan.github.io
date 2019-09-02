@@ -12,6 +12,15 @@
     right:15px;
 }
 
+.headshot {
+    height: 18em;
+    border: 5px solid yellowgreen;
+    border-radius: 5px;
+    padding: 5px;
+    display:inline-block;
+    vertical-align:top;
+}
+
 .header-btn {
     display: inline-block;
     padding: 0.35em 1.2em;
@@ -36,6 +45,10 @@
         margin: 0.4em auto;
     }
 }
+
+@media screen and (max-width: 600px)  {
+        .mobile-title { display: none; }
+    }
 
 .bouncy{
     animation:bouncy 5s infinite linear;
@@ -83,7 +96,7 @@
 }
 
 .section-header {
-    
+    margin-bottom: 50px;
 }
 
 .down {

@@ -35,9 +35,9 @@
     </head>
     <body>
     <!-- Navigation Bar -->
-    <nav class="navbar navbar-toggleable-md navbar-dark  bg-inverse">
-        <div class="page-header bg-inverse">
-            <h1 class="h1 bg-inverse" style="color:white;">Ryan Nesbitt</h1>
+    <nav class="navbar navbar-toggleable-md navbar-dark  bg-inverse" style="height: 70px">
+        <div class="page-header bg-inverse ">
+            <h1 class="h1 bg-inverse mobile-title" style="color:white;">ryan nesbitt</h1>
         </div>
         <div class="right white">
             <input class="header-btn bouncy" type="button" onClick="view('jobs')" value="Jobs" />
@@ -46,13 +46,22 @@
             <input class="header-btn bouncy" type="button" onClick="view('links')" style="animation-delay:0.21s" value="Links"/>
         </div>
     </nav>
+
     <center>
         <div id="overview" class="section" style="background-color: white; color: #292b2c;">
-            <h1 class="section-header">Overview</h1>
-            <p style="text-align: left">This is the personal website of myself, Ryan Nesbitt. You'll find projects I'm working on, the places I have worked,
-            what I use, and where you can find more from me!</p>
-            <a href="#jobs" style="color: #292b2c;"><span class="fa fa-chevron-down down"></span></a>
+            <h1 class="section-header">Abstract</h1>
+            <div style="float:left;margin-right: 30px;margin-left: 30px">
+                <img src="resources/headshot.png" class="headshot">
+            </div>
+            <div style="font-size: 19px">
+                <p style="text-align: left;">Welcome to the personal website of myself, Ryan Nesbitt. You may be a potential employer, an envious colleague, or, most likely, lost. In any case, you are probably wondering who I am, and what this site can do for you. I am a <script> document.write(Math.floor((new Date() - new Date(1996, 4, 12)) / (60*60*24*1000*365)))</script> year old Software Developer, currently obtaining a Computer Science degree at the University of Guelph. I'll take care of your probable response: <code>print ("Incredible Ryan!");</code></p>
+                
+                <p style="text-align: left;">In all seriousness, this site highlights my previous software development industry experiences, my personal projects (coming soon), what I use when developing software, as well as some useful links on where to find me. Please use the jumpy buttons to easily find whichever section interests you, and feel free to shoot me an email of add my on LinkedIn! </p>
+                
+                <p style="text-align: left;">Outside of developing code, I also enjoy drinking copious amounts of coffee, playing video games and a variety of sports. Lifelong player of hockey, softball/slowpitch, soccer, as well as some lacrosse. I also spend some time in the gym when I'm not laying in bed watching Marvel movies. I play video games on my PC and on my Nintendo Switch, ask me what I'm playing.</p>
+            </div>
             
+            <a href="#jobs" style="color: #292b2c;"><span class="fa fa-chevron-down down"></span></a>
         </div>
 
         <div id="jobs" class="section" style="background-color: #292b2c; color: white;">
@@ -60,6 +69,7 @@
             <button class="collapsible">Laborie Medical Technologies</button>
             <div id="laborie" class="content">
                 <br>
+                <p align="left">May 2017 - August 2017</p>
                 <p align="left">My co-op adventure started at Laborie, and I was very lucky to get accepted as a Software Engineer at this amazing company. They were a urodynamics company, making both hardware and software systems for their products. The only negative about my time here was having to spend hours driving between the Mississauga office, and my house in Guelph. Here I greatly increased my confidence, as well as sharpened my ping pong skills.
                 <br></p>
                 <p align="left">Here I was introduced to programming in C#, a language I would fall in love with. I was using C# and XAML to create a windows application using the WPF subsystem of the .NET framework. I also got my first experience with SQL, which was one of my goals for this term. I learned a lot on this term, and I had a lot of fun with the corporate culture Laborie had to offer.</p>
@@ -68,6 +78,7 @@
             <button class="collapsible">Trans Plus Systems Corp.</button>
             <div id="transplus" class="content">
                 <br>
+                <p align="left">September 2017 - December 2017</p>
                 <p align="left">My second position was as a Software Developer at a smaller company, Trans Plus. They created and maintained a legacy software that is used by transporation dispatchers to plan and cordinate routes for shipments. They were also using C#, so this allowed me to jump in quickly and get started. Over my term I fixed over 100 bugs (I was proud of reaching this milestone), as well as working on a new GPS window feature. This position increased my ability to read, and comprehend older code. It forces you to get into the mindset and try and understand why soemthing was written in a certain way, to fix the problem while also not introducing any new ones.
                 </p>
                 <br>
@@ -75,6 +86,7 @@
             <button class="collapsible">Wescast Industries</button>
             <div id="wescast" class="content">
                 <br>
+                <p align="left">July 2018 - September 2018</p>
                 <p align="left">After I had a health scare in April of 2018 (missed exams and interviews for a position, with 2 weeks in the hospital) I applied as a Molten Iron Pour Student at Wescast, an automotive part manufactorer. After talking about my schooling with a few individuals in the break room, the upper-office tech team learned of me, and pulled me off of the floor to help on their software. The team consisted of two mainly hardware team members and me, a student with some basic knowledge.
                 <br></p>
                 <p align="left">Over my time here, I learned a lot as I was the onyly software developer they had in a few years. I used my skills at creating windows applications to debug and recreate updated applications used to control things from payroll to labtech equipment showing steel alloy compositions. I was also introduced to server and database management, setting up several SQL jobs to keep their massive amounts of data flowing. This was a good learning experience, but I did feel overwhelmed trying to learn without guidance, which is why I didn't return.</p>
@@ -83,6 +95,7 @@
             <button class="collapsible">NCR Corporation</button>
             <div id="ncr" class="content">
                 <br>
+                <p align="left">January 2019 - August 2019</p>
                 <h4 align="left">About NCR</h4>
                 <p align="left">NCR (National Cash Register) is a company that has been around for over 135 years! Being in software, I never imagined I would be a part of an organization this historic. It is easy to see how they have remained a competitive company this long. They began by manufacturing the first mechanical cash registers back in 1879. Since then, they have evolved from a hardware company, to a software-first company. They have been able to see the direction the market is going and grow along with it. They have POS systems and machines in most public touchpoints, from retail to stadiums to airports. They also create solutions for bank transformation. This is the team I was a part of. They have sales offices worldwide, a headquarters in Atlanta, and many software teams around the globe.</p>
                 <br>
@@ -90,6 +103,11 @@
                 <h4 align="left">Job Description</h4>
                 <p align="left">My role here was a Software Developer, a role by now I am very accustomed to. I was responsible for designing, writing, reviewing, testing and demoing code. I was already experienced doing these activities from previous positions, and in class experience, so nothing about my role here came as a shock. Where this position differed is the techology used, as my experience previously was mainly using C# (with some Java) on front-end applications. I also have never really gotten too hands on with back-end and dev-ops tasks. Some new stuff I got experience with here was creating API's to be consumed by our customers front end application, using YAML (a new markup language for me). We also used a custom in house tool to write code in YAML with Java, something unique to NCR. Once getting the hang of it, I found it very interesting and easy to write. I also got more experience with deployment, and using Kubernetes and Docker which has been very helpful to my understanding of deploying solutions. I also got acquainted with a new tool for writing tests, Cucumber. Overall, I got to interact with many different technologies and people, and it kept my work very interesting.</p>
                 <br>
+                
+                <h4 align="left">Tools and Technology</h4>
+                <p align="left">I got the opportunity to work with many development tools. I used both Eclipse and IntelliJ for Java development. Maven was used to build the projects, and Cucumber was used for writing readable test steps. I used Visual Studio Code as my goto YAML editor, using several plugins for YAML and Swagger Open API 2.0 development. We used BitBucket with Git, and Jira, for project management and sprint tracking. The product itself was a Microservice architecture running on a Kubernetes deployment cluster with Docker containers. I got first hand experience with all of these tools and it easily the most new tech I've gotten to experience on a job. NCR is a cutting edge company, and had several talks directly from Google and Microsoft and other big companies on how to use their newest offerings such as cloud tech.</p>
+                <br>
+                
                 
                 <h4 align="left">Goals</h4>
                 <p align="left">1. My first goal was to build better team relationships as well as joining in with team activities. I was able to get to know many people, and creating some good relationships with my fellow coops as well as my scrum team members, so I believe I was successful. During my first term, I was a team leader for our team-bonding event of curling, since I had some prior experience in high school. This was a fun event, and althought I was nervous at first, I even led our team to a win! Other events I participated in were team lunches, which are a good way to talk about non-work stuff with my coworkers. I have found that because I feel comfortable with my team and coworkers, I am able to better contribute to team meetings as I am more confident.
@@ -114,16 +132,29 @@
 
         <div id="projects" class="section" style="background-color: yellowgreen; color: white;">
             <h1 class="section-header">Personal Projects</h1>
+            <p>(Content coming soon...)</p>
             <a href="#setup" style="color: white;"><span class="fa fa-chevron-down down"></span></a>
         </div>
 
         <div id="setup" class="section" style="background-color: white; color: #292b2c;">
             <h1 class="section-header">Computer Setup</h1>
             <div id="pc">
-            <h4>PC</h4>
+                <h4>PC</h4>
+                <p>2 24" Curved Samsung Monitors</p>
+                <p>Razer Ornata Chroma,Razer DeathAdder Elite, SteelSeries Arctis 7</p>
+                <p>Intel 6 Core i5-8400 CPU @ 2.80 GHz</p>
+                <p>MSI Radeon RX 580 with 16 GB RAM</p>
+                <p> </p>
+                
+            </div><br>
+            <div id="software">
+                <h4>Software</h4>
+                <p>Text Editors/IDEs: Visual Studio Code, Brackets, Eclipse, IntelliJ, Visual Studio 2019, notepad++, </p>
+                <p>Management Tools: VSTS, Git, Bitbucket, Jira, Redmine, Github, Sourcetree</p>
+
+                <p></p>
             </div>
-            <div id="macbook">
-            <h4>MacBook Pro</h4></div>
+            
             <a href="#links" style="color: #292b2c;"><span class="fa fa-chevron-down down"></span></a>
         </div>
 
